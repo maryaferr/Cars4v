@@ -6,5 +6,11 @@ class Car(models.Model):
     brand = models.CharField(max_length=50, null=False)
     year = models.IntegerField(null=False)
     filname= models.CharField(max_length=50, null=False)
+    
+    def __str__(self):
+        return self.model + ' ano:' + str(self.year)
+    
+    
+    
 
 
